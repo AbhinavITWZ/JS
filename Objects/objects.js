@@ -59,3 +59,4 @@ console.log(g);//working  now gname is defuned as g
 //     name:"wow",
 //     age:20
 // } 
+// wow
