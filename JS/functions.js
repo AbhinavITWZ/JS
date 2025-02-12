@@ -76,7 +76,7 @@ console.log(date.toString());
 console.log(date.toISOString());
 console.log(date.toJSON());
 console.log(date.toLocaleString());
-console.log(date.);
+
 
 
 
