@@ -126,6 +126,23 @@ let [v1,...rest]=arr
 console.log(rest)
 
 
+let random=(...rest)=>{
+    return rest[0]+rest[1]
+
+}
+console.log(random(1,2)) 
+
+
+//destructuring an object
+let newObj={
+    names:"HelloMusafir",
+    married:false
+}
+let {names,married}=newObj
+console.log(names)
+console.log(married)
+
+
 
 
 
