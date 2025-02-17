@@ -1,0 +1,47 @@
+//here we will be seeing about some extra loops other than for,while,do while
+
+// 1.foreach
+let myarr=[1,2,3,4,5,6];
+myarr.forEach(e=>{
+    // console.log(`square of ${e} is ${e*e}`)
+})
+
+//map : a built in object in which key can be anything boolena,function,string,object anything
+const mappy=new Map();
+mappy.set(true,"boolean")
+mappy.set(1,"One")
+mappy.set(()=>{
+    return this
+},"function")
+// console.log();
+
+
+//for each ek loop h jo array ke andar h usko hum array ke through hi access kar sakte h
+for (const [k,l] of mappy) {
+    // console.log(k,l);
+    
+    
+}
+mappy.forEach((e,v)=>{
+    console.log(e,v);
+    
+})
+for (const key in mappy) {
+//    console.log(key);
+   
+}
+let myObj={
+    uname:"abhinav",
+    age:20
+}
+// for (const element of myObj) {
+//     console.log(element);
+    
+    
+// }
+for (const key in myObj) {
+    // console.log(key);
+    
+  
+}
+

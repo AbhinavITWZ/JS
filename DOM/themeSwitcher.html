@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher</title>
+    <style>
+        /* Resetting margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 50px;
+        }
+        .box {
+            border: 5px solid;
+            width: 50px;
+            height: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+
+    <script>
+        let boxes = document.querySelectorAll(".box");
+        boxes.forEach(e => {
+            let r=Math.floor(Math.random()*255);
+            let g=Math.floor(Math.random()*255);
+            let b=Math.floor(Math.random()*255);
+            e.style.backgroundColor=`rgb(${r},${g},${b})`;
+            e.addEventListener("click", () => {
+                let bgColor = window.getComputedStyle(e).backgroundColor;  // Get the background color of the clicked box
+                document.body.style.backgroundColor = bgColor;  // Apply it to the body
+            });
+        });
+    </script>
+</body>
+</html>

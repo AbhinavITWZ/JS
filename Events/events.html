@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Js</title>
+    <style>
+    *{
+        background-color: rgb(80, 77, 77);
+        color: white;
+    }
+    img{
+        width: 30%;
+    }
+    </style>
+  
+</head>
+<body>
+    <ul>
+        <li><img src="https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img"></li>
+        <li><img src="https://images.pexels.com/photos/250591/pexels-photo-250591.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img"></li>
+        <li><img src="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        </li>
+        <li><img src="https://images.pexels.com/photos/1076758/pexels-photo-1076758.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></li>
+        <li><img src="https://images.pexels.com/photos/1226302/pexels-photo-1226302.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></li>
+        <li><button>wow</button></li>
+    </ul>
+
+    <script>
+        
+        //event capturing
+        //event bubbling
+        //docment me se cheezo ko select karo phle then use karo
+        // let li=document.querySelectorAll("li");
+        // li.forEach(e=>{
+        //     e.addEventListener("click",(e)=>{
+        //         console.log(e);
+        //         console.log(e.target.parentNode);
+        //         // e.target.parentNode.remove()
+        //         console.log(e.timeStamp);
+                
+        //     })
+        // })
+        document.querySelector("body").addEventListener("mousemove",(e)=>{
+            console.log(e.screenX,e.screenY);
+            
+            
+             
+
+        })
+    </script>
+</body>
+</html>

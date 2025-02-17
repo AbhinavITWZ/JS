@@ -1,0 +1,47 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Understanding JS</title>
+        <style>
+            body{
+                background-color: rgb(0, 91, 61); 
+            color: rgb(255, 251, 30);           }
+        </style>
+    </head>
+    <body>
+
+        <script>
+            let div=document.createElement("div");
+            let text=document.createTextNode(">> WELCOME TO JS TUTORIAL")
+            console.log(div);
+            console.log(text);
+            div.appendChild(text)
+            document.body.appendChild(div)
+            console.log(div.children)
+            div.setAttribute("class","container")
+            div.classList.add("wow")
+            console.log(div.classList);
+            console.log(div.parentElement);
+            console.log(div.nextElementSibling);
+            
+            div.id="wow"
+            console.log(div.id);
+            div.className="wow";
+            //koi bhi cheez karte karte yrr aadat ho jaati h isliye tension ki koi baat nhi h hn jya tha ya nhi tha
+            
+            
+            //bhai karte karte habit ho jaati h isliye tension
+            // ki jo bhi baat h wo jyada tension nhi lene ka ...thik h na isliye aaram se kaam karte rho or jo doubt lage google h hi isliye bematlab ka tension nhi ...ye rkho ki hn ye hota h 
+
+            //js e har cheez function ke syntax me rhegi or koi agar nhi h toh wo = 
+            // js me har cheez function hi h isliye koi tension ki baat nhi h syntax ki or jo nhi h usme =
+            div.setAttribute("class",wow)
+            
+            
+            
+            
+        </script>
+    </body>
+    </html>
